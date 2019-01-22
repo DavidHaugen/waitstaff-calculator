@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Waitstaff Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive-grid.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Waitstaff Calculator</h1>
+    </header>
+    <main>
+       <div class = "row">
+        <div class = "col-6">
+            <div class = "box">
+                <h2>Enter the Meal Details</h2>
+                <form class = "meal-details js-meal-details">
+                        <label for="base-price">Base meal price: $</label>
+                        <input type="number" name="base-price" id="base-price">
+                        <br>
+                        <label for="tax">Tax rate: %</label>
+                        <input type="number" name="tax-rate" id="tax-rate">
+                        <br>
+                        <label for="tip-percentage">Tip percentage: %</label>
+                        <input type="number" name="tip-percentage" id="tip-percentage">
+                        <br>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <div class = "col-6">
+            <div class = "row">
+                <div class = "box">
+                    <h2>Customer Charges</h2>
+                        <span>Subtotal: </span><span class = "js-subtotal">0.00</span>
+                        <br>
+                        <span>Tip: </span><span class = "js-tip">0.00</span>
+                        <br>
+                        <span>Total: </span><span class = "js-total">0.00</span>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "box">
+                    <h2>My Earnings Info</h2>
+                        <span>Tip total: </span><span class = "js-tip-total">0.00</span>
+                        <br>
+                        <span>Meal count: </span><span class = "js-meal-count">0</span>
+                        <br>
+                        <span>Average tip per meal: </span><span class = "js-avg-tip">0.00</span>
+                </div>
+            </div>
+        </div>
+
+       </div>
+    </main>
+</body>
+</html>
